@@ -1,0 +1,1 @@
+['--lr', '5e-4', '--gamma', '0.995', '--use-gae', '--gae-lambda', '0.95', '--entropy-coef', '0.01', '--value-loss-coef', '0.5', '--num-steps', '400', '--num-processes', '64', '--ppo-epoch', '3', '--num-mini-batch', '200', '--use-proper-time-limits', '--ob-rms', '--obj-rms', '--raw']
