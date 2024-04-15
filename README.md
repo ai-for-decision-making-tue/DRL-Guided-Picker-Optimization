@@ -2,6 +2,18 @@
 This repo contains the Python code used for the paper 
 "Learning Efficient and Fair Policies for Uncertainty-Aware Collaborative Human-Robot Order Picking".
 
+Our work is currently published as a preprint. To cite, please use the following Bibtex:
+```
+@misc{smit2024learning,
+      title={Learning Efficient and Fair Policies for Uncertainty-Aware Collaborative Human-Robot Order Picking}, 
+      author={Igor G. Smit and Zaharah Bukhsh and Mykola Pechenizkiy and Kostas Alogariastos and Kasper Hendriks and Yingqian Zhang},
+      year={2024},
+      eprint={2404.08006},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO}
+}
+```
+
 We shortly explain the code files below.
 
 ## Folders
