@@ -2,13 +2,15 @@
 from __future__ import annotations
 
 import itertools
+import multiprocessing as mp
 import operator
 import os
 import pickle
 from collections import Counter, deque
-from typing import Generator, Optional, Union, Literal
+from typing import Generator, Literal, Optional, Union
 
 import gymnasium as gym
+import joblib
 import mo_gymnasium as mo_gym
 import networkx as nx
 import numpy as np
@@ -21,12 +23,10 @@ from scipy.sparse.csgraph import construct_dist_matrix, shortest_path
 from statsmodels.stats.weightstats import DescrStatsW
 
 import numba_helpers
-import joblib
-import multiprocessing as mp
-from helpers import (calculate_expected_pick_time, create_warehouse_grid,
+from helpers import (_get_coordinates_from_locations,
+                     calculate_expected_pick_time, create_warehouse_grid,
                      sample_quantities, sample_volume_weights,
                      sample_volume_weights_with_categories)
-from video_plotting import _get_coordinates_from_locations
 
 np.seterr(invalid="ignore")
 
